@@ -6,8 +6,7 @@ import Menu from './Pages/Menu';
 import Cart from './components/Cart';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import CategoryGrid from './Pages/CategoryGrid';
-import CategoryPage from './Pages/CategoryPage.jsx';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -17,10 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/category/:categoryName" element={<CategoryPage />} />
-        <Route path="/menu" element={<CategoryGrid />} />
-
-      </Routes>
+         </Routes>
+  {/* Common Footer for all pages */}
+         <Footer/>
     </Router>
   );
 }
